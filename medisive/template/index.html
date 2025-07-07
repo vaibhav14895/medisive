@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medisive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white">
+
+    
+    
+
+    <!-- Hero Section -->
+    <section class="relative w-full h-screen bg-cover bg-center flex flex-col justify-center px-10 text-white"
+        style="background-image: url({% static  'images/giphy1.gif' %});">
+
+        <!-- Floating Navbar -->
+        <nav class="fixed top-0 z-50 bg-white shadow-lg rounded-full px-8 py-3 mx-4 mt-4 flex justify-between items-center w-[95%] text-gray-800">
+            <div class="flex items-center space-x-3">
+                <img src="{% static  'images/logo/mainlogo.gif' %}" alt="Logo" class="h-10 w-10 rounded-full" />
+                <span class="text-xl font-bold">Medisive</span>
+            </div>
+            <ul class="flex space-x-8 font-medium">
+                <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                <li><a href="#products" class="hover:text-blue-600">Products</a></li>
+                <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+            </ul>
+            <button class="bg-green-500 text-white px-5 py-2 rounded-full hover:bg-green-600 font-semibold">Join</button>
+        </nav>
+        <h1 class="text-5xl font-bold text-cyan-400">PharmaFuture</h1>
+        <p class="text-xl mt-4">Dedicated to health solutions</p>
+        <a href="#"
+            class="mt-6 border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-black w-max">See
+            how</a>
+    </section>
+
+    <!-- Innovation Section -->
+    <section class="bg-cyan-500 text-white text-center py-20">
+        <h2 class="text-5xl font-bold mb-4">Innovate today</h2>
+        <p class="text-xl mb-8">Ready for what comes next?</p>
+        <div class="flex justify-center gap-6">
+            <button class="bg-green-500 px-6 py-3 rounded-full font-bold">Start now</button>
+            <button class="bg-red-500 px-6 py-3 rounded-full font-bold">Learn more</button>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="text-center py-16">
+        <div class="flex justify-center space-x-16 text-3xl font-bold text-green-500">
+            <div>
+                <div>25</div>
+                <div class="text-black text-base font-normal mt-2">Years active</div>
+            </div>
+            <div>
+                <div>450</div>
+                <div class="text-black text-base font-normal mt-2">Trials passed</div>
+            </div>
+            <div>
+                <div>1200</div>
+                <div class="text-black text-base font-normal mt-2">Experts employed</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="text-center px-8 py-12">
+        <h2 class="text-4xl font-bold mb-10">Latest News</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div><img src="" class="rounded-xl mb-2" />
+                <div class="font-semibold text-xl">Cancer</div>
+            </div>
+            <div><img src="images/img4.png" class="rounded-xl mb-2" />
+                <div class="font-semibold text-xl">Global Health</div>
+            </div>
+            <div><img src="images/img5.png" class="rounded-xl mb-2" />
+                <div class="font-semibold text-xl">Vaccine Success</div>
+            </div>
+            <div><img src="images/img6.png" class="rounded-xl mb-2" />
+                <div class="font-semibold text-xl">AI Drug</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="bg-cyan-50 text-center py-16 px-8">
+        <h2 class="text-4xl font-bold mb-10">Featured Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div class="bg-white rounded-xl p-4 shadow">
+                <img src="{% static  'images/medicines/flupen.jpg' %}" class="rounded-lg mb-4" />
+                <h3 class="text-xl font-semibold">Aspirin Pro</h3>
+                <p class="text-sm text-gray-600">$29.99</p>
+                <p class="text-sm text-gray-500">Relieves pain, reduces fever</p>
+            </div>
+            <div class="bg-white rounded-xl p-4 shadow">
+                <img src="{% static  'images/medicines/lc.jpg' %}" class="rounded-lg mb-4" />
+                <h3 class="text-xl font-semibold">VitaBoost</h3>
+                <p class="text-sm text-gray-600">$49.99</p>
+                <p class="text-sm text-gray-500">Supports immune health</p>
+            </div>
+            <div class="bg-white rounded-xl p-4 shadow">
+                <img src="{% static  'images/medicines/amlo.jpg' %}" class="rounded-lg mb-4" />
+                <h3 class="text-xl font-semibold">Sleepeaze</h3>
+                <p class="text-sm text-gray-600">$39.99</p>
+                <p class="text-sm text-gray-500">Promotes restful sleep</p>
+            </div>
+            <div class="bg-white rounded-xl p-4 shadow">
+                <img src="{% static  'images/medicines/tel.jpg' %}" class="rounded-lg mb-4" />
+                <h3 class="text-xl font-semibold">CogniMax</h3>
+                <p class="text-sm text-gray-600">$59.99</p>
+                <p class="text-sm text-gray-500">Enhances focus and memory</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="text-center py-20">
+        <p class="text-2xl italic mb-6">"Life-changing products! Highly recommend."</p>
+        <img src="{% static  'images/medicines/tel.jpg' %}" class="mx-auto rounded-full h-30 w-30 object-cover mb-2" />
+        <h4 class="text-lg font-semibold">Devendra Tyaagi</h4>
+    </section>
+
+    <!-- Partners -->
+    <section class="text-center px-8 py-16">
+        <h2 class="text-4xl font-bold mb-10">Our Partners</h2>
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-6">
+            <img src="images/img1.png" class="rounded-xl" />
+            <img src="images/img2.png" class="rounded-xl" />
+            <img src="images/img3.png" class="rounded-xl" />
+            <img src="images/img4.png" class="rounded-xl" />
+            <img src="images/img5.png" class="rounded-xl" />
+            <img src="images/img6.png" class="rounded-xl" />
+        </div>
+    </section>
+    <div class="bg-[#e6fafa] py-16 px-4 text-center">
+        <h2 class="text-5xl font-serif font-bold mb-10">FAQ</h2>
+    
+        <div class="max-w-3xl mx-auto bg-white p-10 rounded-3xl shadow-md">
+            <h3 class="text-3xl font-serif font-bold mb-4">
+                What is your patient commitment?
+            </h3>
+            <p class="text-lg text-gray-700 font-serif">
+                Our dedication to patient well-being drives every decision and action we take.
+                We strive to improve lives through innovative therapies.
+            </p>
+        </div>
+        <div class="max-w-3xl mx-auto bg-white p-10 rounded-3xl shadow-md m-9">
+            <h3 class="text-3xl font-serif font-bold mb-4">
+                What is your patient commitment?
+            </h3>
+            <p class="text-lg text-gray-700 font-serif">
+                Our dedication to patient well-being drives every decision and action we take.
+                We strive to improve lives through innovative therapies.
+            </p>
+        </div>
+        <div class="max-w-3xl mx-auto bg-white p-10 rounded-3xl shadow-md">
+            <h3 class="text-3xl font-serif font-bold mb-4">
+                What is your patient commitment?
+            </h3>
+            <p class="text-lg text-gray-700 font-serif">
+                Our dedication to patient well-being drives every decision and action we take.
+                We strive to improve lives through innovative therapies.
+            </p>
+        </div>
+    </div>
+    <!-- Connect With Us Section -->
+    <div class="bg-white py-16 px-4 text-center">
+        <h2 class="text-5xl font-serif font-bold mb-10">Connect With Us</h2>
+    
+        <div class="flex justify-center gap-6">
+            <!-- Facebook -->
+            <a href="#" class="bg-gray-100 p-4 rounded-full hover:bg-gray-200 transition">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+                    class="w-6 h-6 text-green-600" alt="Facebook" />
+            </a>
+    
+            <!-- Twitter -->
+            <a href="#" class="bg-gray-100 p-4 rounded-full hover:bg-gray-200 transition">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg"
+                    class="w-6 h-6 text-green-600" alt="Twitter" />
+            </a>
+    
+            <!-- Instagram -->
+            <a href="#" class="bg-gray-100 p-4 rounded-full hover:bg-gray-200 transition">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                    class="w-6 h-6 text-green-600" alt="Instagram" />
+            </a>
+    
+            <!-- LinkedIn -->
+            <a href="#" class="bg-gray-100 p-4 rounded-full hover:bg-gray-200 transition">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                    class="w-6 h-6 text-green-600" alt="LinkedIn" />
+            </a>
+    
+            <!-- Twitch -->
+            <a href="#" class="bg-gray-100 p-4 rounded-full hover:bg-gray-200 transition">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitch.svg"
+                    class="w-6 h-6 text-green-600" alt="Twitch" />
+            </a>
+        </div>
+    </div>
+<!-- Contact Form Section -->
+<div class="bg-[#e6fafa] py-16 px-4 text-center">
+    <h2 class="text-5xl font-serif font-bold mb-10">Reach Out Today</h2>
+
+    <form class="max-w-4xl mx-auto space-y-6">
+        <div class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0">
+            <input type="text" placeholder="Name"
+                class="flex-1 rounded-full px-6 py-4 shadow text-lg font-serif placeholder-gray-500 focus:outline-none" />
+            <input type="email" placeholder="Email"
+                class="flex-1 rounded-full px-6 py-4 shadow text-lg font-serif placeholder-gray-500 focus:outline-none" />
+        </div>
+
+        <input type="text" placeholder="Phone"
+            class="w-full rounded-full px-6 py-4 shadow text-lg font-serif placeholder-gray-500 focus:outline-none" />
+
+        <textarea rows="4" placeholder="Message"
+            class="w-full rounded-3xl px-6 py-4 shadow text-lg font-serif placeholder-gray-500 focus:outline-none resize-none"></textarea>
+
+        <button type="submit"
+            class="bg-green-500 hover:bg-green-600 text-white font-bold text-lg font-serif px-10 py-4 rounded-full transition duration-300">
+            Send Message
+        </button>
+    </form>
+</div>
+<!-- Get In Touch Section -->
+<div class="bg-[#e6fafa] py-16 px-4">
+    <h2 class="text-5xl font-serif font-bold text-center mb-10">Get In Touch</h2>
+
+    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8 items-start justify-center">
+
+        <!-- Contact Info Card -->
+        <div class="bg-white p-8 rounded-3xl shadow-md text-lg font-serif w-full lg:w-1/2">
+            <p class="mb-3"><strong>Phone:</strong>01662-363920</p>
+            <p class="mb-3"><strong>WhatsApp:</strong> 85719 36403,98122 22059</p>
+            <p class="mb-3"><strong>Email:</strong> info@globexpharmaceuticals.com</p>
+            <p class="mb-3"><strong>Address:</strong> DSS-100,Near HDFC Bank,Sector 15-A,Hisar</p>
+            <p><strong>Hours:</strong> Mon-Fri: 9 AM - 5 PM</p>
+        </div>
+
+        <!-- Google Map Embed -->
+        <div class="w-full lg:w-1/2 rounded-3xl overflow-hidden shadow-md">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.976892254998!2d77.3229882174374!3d28.57045659954695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4492e910b27%3A0x6831440df7b89799!2sHDFC%20Bank!5e0!3m2!1sen!2sin!4v1751530545678!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+</div>
+<!-- Footer Section -->
+<footer class="bg-black text-white py-12 px-4 text-center font-serif">
+
+    <!-- Navigation Links -->
+    <div class="mb-8 flex justify-center gap-8 text-xl">
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Products</a>
+        <a href="#" class="hover:underline">Careers</a>
+        <a href="#" class="hover:underline">Contact</a>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center gap-6 mb-8">
+        <!-- Facebook -->
+        <a href="#" class="bg-gray-100 p-4 rounded-full hover:bg-gray-200 transition">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" class="w-6 h-6"
+                alt="Facebook" />
+        </a>
+        <!-- Twitter -->
+        <a href="#" class="bg-gray-100 p-4 rounded-full hover:bg-gray-200 transition">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" class="w-6 h-6"
+                alt="Twitter" />
+        </a>
+        <!-- Instagram -->
+        <a href="#" class="bg-gray-100 p-4 rounded-full hover:bg-gray-200 transition">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" class="w-6 h-6"
+                alt="Instagram" />
+        </a>
+        <!-- LinkedIn -->
+        <a href="#" class="bg-gray-100 p-4 rounded-full hover:bg-gray-200 transition">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" class="w-6 h-6"
+                alt="LinkedIn" />
+        </a>
+        <!-- Twitch -->
+        <a href="#" class="bg-gray-100 p-4 rounded-full hover:bg-gray-200 transition">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitch.svg" class="w-6 h-6"
+                alt="Twitch" />
+        </a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-gray-300 text-sm">
+        © 2025 Medisive Lifescience Pvt.Ltd. All rights reserved.
+    </p>
+</footer>
+    
+</body>
+
+</html>
